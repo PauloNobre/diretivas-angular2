@@ -1,0 +1,11 @@
+<div>
+  <a (click)="aba = 'home'">Home</a>
+  <a (click)="aba = 'mapa'">Mapa</a>
+  <a (click)="aba = 'lista'">Lista</a>
+</div>
+
+<div [ngSwitch]="aba">
+<p *ngSwitchCase="'mapa'">Modo Mapa ativado</p>
+<p *ngSwitchCase="'lista'">Modo Lista ativado</p>
+<p *ngSwitchDefault>Home</p>
+</div>
